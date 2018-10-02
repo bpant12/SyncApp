@@ -1,0 +1,8 @@
+{
+  "local":{
+    "url":"http://localhost:8888"
+  },
+  "qe":{
+    "url":"http://localhost:8888"
+  }
+}

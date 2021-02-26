@@ -11,10 +11,15 @@ Configure SyncApp Server Setup
     Here you will get <IPAddress> of mongo container
 
 4.docker run -d -e TZ=Asia/Calcutta -e mongodburl= <IPAddress> -p 8089:8080 -P --name syncapp_container-new  teachingpark/s-app1:1.0-beta
-
+  NOTE: Here mongodb url will be the ip address only. Say for example 172.17.0.2
 
 5. Then Go to URL to see the dashboard:
 http://your ip or localhost:8089/app/#/main
+
+6. Go to Add App URL to add the new App:
+  http://localhost:8089/app/#/addapp
+  This app will be used in the SyncApp Client code. For example mentioned in the file TestSelenium.java for first parameter in method call endTracking()
+   devtoolAnalyzer.endTracking("Stackoverflow-Web","Questions","testuser2@gmail.com");
 
 
 Configure SyncApp Client Setup:
